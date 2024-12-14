@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+    font-family: "윤고딕310.ttf","맑은고딕";
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: auto;
+}
+
+ul li {
+    list-style: none;
+}
+
