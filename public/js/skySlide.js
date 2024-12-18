@@ -1,3 +1,5 @@
+const section7 = document.querySelector(".section7");
+
 const blue = document.querySelector(".blue");
 const night = document.querySelector(".night");
 const moonOriginal = document.querySelector(".moon_original");
@@ -8,16 +10,23 @@ const intersectionObserver = new IntersectionObserver(function (entries) {
   if (entries[0].intersectionRatio <= 0) return;
 
   blue.style.height = "0";
-  nightFunction();
 });
 
 function nightFunction() {
-  if (moonShadow.classList.contains("night")) {
-    moonOriginal.classList.remove("night");
+  if ((blue.style.height = "0")) {
+    // moonShadow.classList.contains("night");
+    // moonOriginal.classList.contains("night");
+    console.log("night");
   } else {
-    moonShadow.classList.contains("night");
+    //night상태가 아닐경우 night클래스를 삭제한다.
+    // moonShadow.classList.remove("night");
+    // moonOriginal.classList.remove("night");
+    console.log("afternoon");
   }
 }
 
 // 주시 시작
-intersectionObserver.observe(document.querySelector(".section7"));
+
+setTimeout(() => {
+  intersectionObserver.observe(document.querySelector(".section7"));
+}, 2000);
