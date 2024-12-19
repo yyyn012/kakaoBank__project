@@ -1,29 +1,28 @@
-const section7 = document.querySelector(".section7");
-
 const blue = document.querySelector(".blue");
-const night = document.querySelector(".night");
+const star = document.querySelectorAll(".ico_star");
+
 const moonOriginal = document.querySelector(".moon_original");
 const moonShadow = document.querySelector(".moon_shadow");
+
+const on = document.querySelector(".on");
+const night = document.querySelector(".night");
 
 const intersectionObserver = new IntersectionObserver(function (entries) {
   // intersectionRatio가 0이라는 것은 대상을 볼 수 없다는 것이므로 아무것도 하지 않음
   if (entries[0].intersectionRatio <= 0) return;
 
-  blue.style.height = "0";
-});
+  // blue.style.height = "0";
+  // star.classList.add("on");
 
-function nightFunction() {
-  if ((blue.style.height = "0")) {
-    // moonShadow.classList.contains("night");
-    // moonOriginal.classList.contains("night");
-    console.log("night");
-  } else {
-    //night상태가 아닐경우 night클래스를 삭제한다.
-    // moonShadow.classList.remove("night");
-    // moonOriginal.classList.remove("night");
-    console.log("afternoon");
-  }
-}
+  // star.forEach(() => {
+  //   for (let i = 0; i < star.children.length; i++) {
+  //     star.children[i].classList.add("on");
+  //   }
+  // });
+
+  moonShadow.classList.add("night");
+  moonOriginal.classList.add("night");
+});
 
 // 주시 시작
 

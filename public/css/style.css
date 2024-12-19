@@ -526,7 +526,6 @@ a {
   height: 112px;
   margin-left: 450px;
   border-radius: 56px;
-  border: 1px solid red;
 }
 
 .moon_original {
@@ -547,20 +546,21 @@ a {
 
 .moon_shadow {
   position: absolute;
-  left: -30px;
-  top: -25px;
+  display: none;
+  left: 1px;
+  top: 1px;
   width: 100%;
   height: 100%;
   border-radius: 55px;
-  background-color: #333b58;
-  z-index: 99;
-  -webkit-transition-property: background-color, top, left;
-  -webkit-transition-duration: 0.85s;
-  transition-property: background-color, top, left;
+  background-color: #559cde;
+  transition-property: background-color 0.85s, top, left;
+  -webkit-transition-property: background-color 0.85s, top, left;
   transition-duration: 0.85s;
+  -webkit-transition-duration: 0.85s;
 }
 
-.moon_shdow.night {
+.moon_shadow.night {
+  display: block;
   top: -23px;
   left: -23px;
   background-color: #333b58;
@@ -568,13 +568,17 @@ a {
 
 .ico_star {
   background-color: #fff;
-  display: block;
+  display: none;
   position: absolute;
   width: 4px;
   height: 4px;
   border-radius: 4px;
   transition: all cubic-bezier(0.6, 0.2, 0.1, 1) 1s,
     cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
+}
+
+.ico_star.on {
+  display: block;
 }
 
 .ico_star1 {
