@@ -44,7 +44,7 @@ a {
 }
 
 .nav-btn {
-  background: url(/images/hamburger.png);
+  background: url(/kakaobank/images/hamburger.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -57,7 +57,7 @@ a {
 }
 
 .nav-btn.active {
-  background: url(/images/x_thin_icon.png);
+  background: url(/kakaobank/images/x_thin_icon.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -101,7 +101,7 @@ a {
 
 .fold {
   display: inline-block;
-  background: url(/images/arrow-40-d.svg);
+  background: url(/kakaobank/images/arrow-40-d.svg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -111,7 +111,7 @@ a {
 
 .fold.active {
   display: inline-block;
-  background: url(/images/arrow-40.svg);
+  background: url(/kakaobank/images/arrow-40.svg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -181,7 +181,7 @@ a {
   display: inline-block;
   width: 14px;
   height: 14px;
-  background-image: url(/images/newtab.svg);
+  background-image: url(/kakaobank/images/newtab.svg);
   background-size: 14px 14px;
   vertical-align: middle;
 }
@@ -295,7 +295,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(/images/section1-main.png);
+  background-image: url(/kakaobank/images/section1-main.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -437,7 +437,7 @@ a {
   width: 100vw;
   height: 100vh;
   padding-top: 60px;
-  background: #fff url(/images/home_map.png) no-repeat -12% 50%;
+  background: #fff url(/kakaobank/images/home_map.png) no-repeat -12% 50%;
   background-size: 840px auto;
   background-position: center 400px;
 }
